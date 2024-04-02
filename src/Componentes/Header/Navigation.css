@@ -2,7 +2,6 @@
   list-style-type: none;
   margin: 0.5em;
   display: flex;
-  font-size: 1.25em;
   margin-right: 2em;
 }
 
@@ -35,7 +34,6 @@
 
 .navbar-brand {
   flex: 1;
-  font-size: 1.5em;
   display: flex;
 }
 
@@ -49,7 +47,8 @@
   position: fixed;
   top: 0;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.5em;
 }
 
 .navbar-brand-button {
@@ -60,7 +59,6 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  font-size: 1em;
 }
 
 .contact-button {

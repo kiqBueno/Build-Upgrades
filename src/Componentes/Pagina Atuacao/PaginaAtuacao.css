@@ -1,0 +1,41 @@
+.cards {
+  display: flex;
+  gap: 1.5em;
+  justify-content: space-between;
+  margin: 1.5em;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: transform 0.4s, background-color 0.4s, filter 0.4s;
+  background-color: white;
+  border: 0.15em solid orange;
+  font-size: 1.25em;
+}
+
+.card h2 {
+  margin-bottom: 0.5em;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.cards:hover > .card:not(:hover) {
+  transform: scale(1);
+}
+
+.head1 {
+ text-align: center;
+ margin-top: 3em;
+ font-size: 3em;
+}

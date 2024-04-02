@@ -39,7 +39,7 @@ export const Navbar = () => {
           <ul className="navbar-menu">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#atuacao">Atuação</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
+            {/* <li><a href="#portfolio">Portfólio</a></li> */}
             <li><button onClick={handleContactClick} className="contact-button">Contato</button></li>
           </ul>
         </nav>

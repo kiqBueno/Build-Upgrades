@@ -4,10 +4,12 @@ export const PaginaSobre = () => {
   return (
     <div className="container">
       <div className="texto">
-        <h1 style={{ fontSize: "3em" }}>Quem somos?</h1>
+        <h1>Quem somos?</h1>
         <p>
-          Somos uma empresa que visa ampliar o alcance e visibilidade para negócios de pequeno porte em geral<br/>
-          Através da nossa plataforma e gerenciamento, proporcionamos a melhor experiência para o usuário e asseguramos integridade do serviço
+          Somos uma empresa que visa ampliar o alcance e visibilidade para
+          negócios de pequeno porte em geral através da nossa plataforma e
+          gerenciamento, proporcionamos a melhor experiência para o usuário e
+          asseguramos integridade do serviço.
         </p>
       </div>
       <div className="imagem">
