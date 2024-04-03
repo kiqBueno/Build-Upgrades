@@ -1,8 +1,14 @@
+.ContainerAtuacao {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+}
+
 .cards {
   display: flex;
   gap: 1.5em;
   justify-content: space-between;
-  margin: 1.5em;
 }
 
 .card {
@@ -21,10 +27,6 @@
   font-size: 1.25em;
 }
 
-.card h2 {
-  margin-bottom: 0.5em;
-}
-
 .card:hover {
   transform: scale(1.1);
   background-color: white;
@@ -36,6 +38,5 @@
 
 .head1 {
  text-align: center;
- margin-top: 3em;
  font-size: 3em;
 }

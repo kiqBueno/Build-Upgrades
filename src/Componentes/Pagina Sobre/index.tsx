@@ -2,8 +2,8 @@ import "./PaginaSobre.css";
 
 export const PaginaSobre = () => {
   return (
-    <div className="container">
-      <div className="texto">
+    <div className="containerSobre" id="sobre">
+      <div className="texto1">
         <h1>Quem somos?</h1>
         <p>
           Somos uma empresa que visa ampliar o alcance e visibilidade para
@@ -12,7 +12,7 @@ export const PaginaSobre = () => {
           asseguramos integridade do serviço.
         </p>
       </div>
-      <div className="imagem">
+      <div className="imagem1">
         <img src="/icon.png" alt="Logo da Empresa" />
         <h2>Build Upgrade</h2>
       </div>

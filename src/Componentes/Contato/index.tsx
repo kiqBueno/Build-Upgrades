@@ -26,7 +26,7 @@ export const Contato = () => {
   };
 
   return (
-    <footer>
+    <footer className="containerFooter">
       <div className="texto">
         <h1>Contato</h1>
         <p>

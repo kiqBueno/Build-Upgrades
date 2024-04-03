@@ -2,7 +2,7 @@ import "./PaginaAtuacao.css";
 
 export const PaginaAtuacao = () => {
   return (
-    <div>
+    <div id="atuacao" className="ContainerAtuacao">
       <h1 className="head1">Atuação de mercado</h1>
       <div className="cards">
         <div className="card">

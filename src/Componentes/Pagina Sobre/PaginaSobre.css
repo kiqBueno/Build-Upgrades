@@ -1,22 +1,23 @@
-.container {
+.containerSobre {
   display: flex;
-  justify-content: space-between;
-  margin: 2em;
   font-size: 1.25em;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
 }
 
-.imagem {
+.imagem1 {
   flex: 0 0 40%;
-  margin-right: 1%;
   text-align: center;
 }
 
-.imagem img {
+.imagem1 img {
   width: 20em;
   height: auto;
 }
 
-.texto {
+.texto1 {
   flex: 0 0 60%;
   justify-content: center;
+  align-items: center;
 }
