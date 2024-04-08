@@ -7,9 +7,9 @@ export const PaginaSobre = () => {
         <h1>Quem somos?</h1>
         <p>
           Somos uma empresa que visa ampliar o alcance e visibilidade para
-          negócios de pequeno porte em geral através da nossa plataforma e
-          gerenciamento, proporcionamos a melhor experiência para o usuário e
-          asseguramos integridade do serviço.
+          negócios de pequeno porte em geral através da nossa plataforma Web,
+          proporcionamos a melhor experiência para o usuário e asseguramos
+          integridade do serviço.
         </p>
       </div>
       <div className="imagem1">

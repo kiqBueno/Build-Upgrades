@@ -1,44 +1,43 @@
 .navbar-menu {
   list-style-type: none;
-  margin: 0.5em;
-  display: flex;
-  margin-right: 2em;
-  align-items: center;
   gap: 2em;
-  margin-right: 2em;
-}
-
-.navbar-menu li {
-  margin-right: 1em;
 }
 
 .navbar-menu li a {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #f0f0f0f1  ;
 }
 
-.navbar-menu li a:hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color: orange;
-  opacity: 0.5;
+.navbar-menu li a:hover, .navbar-brand-button:hover {
+  color: #f0f0f0b2;
+  transition: color 0.3s ease;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  margin: 1em;
+  margin: 0.5em;
+  justify-content: space-around;
 }
 
 .navbar-brand {
-  flex: 1;
   display: flex;
-  margin-left: 2em;
+}
+
+.left-container, .right-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-container{
+    gap: 2em;
+}
+
+.left-container .navbar-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
 .navbar-brand img {
@@ -50,26 +49,49 @@
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   font-size: 1.5em;
   z-index: 1;
 }
 
+
 .navbar-brand-button {
   background: none;
-  color: inherit;
+  color: #f0f0f0f1;;
   border: none;
   padding: 0;
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  align-items: center;
+  display: flex;
 }
 
 .contact-button {
   cursor: pointer;
   font-size: 1em;
   background-color: transparent;
-  border: 1px solid orange;
+  border: 1px solid #f0f0f0f1;
   border-radius: 5px;
+  color: #f0f0f0f1;
 }
+
+.contact-button:hover{
+  color: #f0f0f0b2;
+  border: 1px solid #f0f0f0b2;
+}
+
+.direita {
+  margin-left: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .navbar-brand-button, .contact-button {
+    font-size: 1em;
+  }
+}
+

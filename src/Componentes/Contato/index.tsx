@@ -49,6 +49,7 @@ export const Contato = () => {
                 onChange={handleChange}
                 placeholder="Fulano Jr"
                 required
+                autoComplete="name"
               />
             </div>
             <div className="form-group">
@@ -63,6 +64,7 @@ export const Contato = () => {
                 onChange={handleChange}
                 placeholder="exemplo@email.com"
                 required
+                autoComplete="email"
               />
             </div>
             <div className="form-group">
@@ -76,6 +78,7 @@ export const Contato = () => {
                 onChange={handleChange}
                 placeholder="Texto descritivo sobre a ideia e seu empreendimento"
                 required
+                autoComplete="off"
               ></textarea>
             </div>
             <button type="submit">Enviar</button>

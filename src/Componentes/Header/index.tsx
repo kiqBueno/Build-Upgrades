@@ -37,7 +37,8 @@ export const Navbar = () => {
       const targetElement = document.querySelector(targetId) as HTMLElement;
       if (targetElement) {
         const offset = targetElement.getBoundingClientRect().top;
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
         const targetPosition = offset + scrollTop;
         window.scrollTo({
           top: targetPosition,
@@ -51,29 +52,31 @@ export const Navbar = () => {
     <div style={{ marginTop: headerHeight }}>
       <header className="header">
         <nav className="header-container">
-          <div className="navbar-brand">
-            <img src="/icon.png" alt="Logo da empresa" />
-            <button onClick={handleGoToTop} className="navbar-brand-button">
-              Build Upgrades
+          <div className="left-container">
+            <nav className="navbar-brand">
+              <button onClick={handleGoToTop} className="navbar-brand-button">
+                <img src="/icon.png" alt="Logo da empresa" />
+                Build Upgrades
+              </button>
+            </nav>
+            <ul className="navbar-menu">
+              <li>
+                <a href="#sobre" onClick={handleSmoothScroll}>
+                  Sobre
+                </a>
+              </li>
+              <li>
+                <a href="#atuacao" onClick={handleSmoothScroll}>
+                  Atuação
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="right-container">
+            <button onClick={handleGoToBottom} className="contact-button">
+              Entrar em Contato
             </button>
           </div>
-          <ul className="navbar-menu">
-            <li>
-              <a href="#sobre" onClick={handleSmoothScroll}>
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a href="#atuacao" onClick={handleSmoothScroll}>
-                Atuação
-              </a>
-            </li>
-            <li>
-              <button onClick={handleGoToBottom} className="contact-button">
-                Contato
-              </button>
-            </li>
-          </ul>
         </nav>
       </header>
     </div>
