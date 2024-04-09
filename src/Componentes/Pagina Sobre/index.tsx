@@ -14,7 +14,6 @@ export const PaginaSobre = () => {
       </div>
       <div className="imagem1">
         <img src="/icon.png" alt="Logo da Empresa" />
-        <h2>Build Upgrade</h2>
       </div>
     </div>
   );
