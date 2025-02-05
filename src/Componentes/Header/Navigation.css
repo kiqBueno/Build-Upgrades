@@ -6,10 +6,11 @@
 .navbar-menu li a {
   position: relative;
   text-decoration: none;
-  color: #191a18  ;
+  color: #191a18;
 }
 
-.navbar-menu li a:hover, .navbar-brand-button:hover {
+.navbar-menu li a:hover,
+.navbar-brand-button:hover {
   color: #ff9600;
   transition: color 0.3s ease;
 }
@@ -17,21 +18,29 @@
 .header-container {
   display: flex;
   align-items: center;
-  margin: 0.5em;
   justify-content: space-around;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  font-size: 1.5em;
+  z-index: 1;
 }
 
 .navbar-brand {
   display: flex;
 }
 
-.left-container, .right-container {
+.left-container,
+.right-container {
   display: flex;
   align-items: center;
 }
 
-.left-container{
-    gap: 2em;
+.left-container {
+  gap: 2em;
 }
 
 .left-container .navbar-menu {
@@ -41,22 +50,8 @@
 }
 
 .navbar-brand img {
-  width: 2em;
-  height: auto;
+  width: 4vw;
 }
-
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  font-size: 1.5em;
-  z-index: 1;
-}
-
 
 .navbar-brand-button {
   background: none;
@@ -65,9 +60,8 @@
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
-  align-items: center;
   display: flex;
+  align-items: center;
 }
 
 .contact-button {
@@ -80,27 +74,93 @@
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-button:disabled {
-  pointer-events: none;
-}
-
 .contact-button:hover {
   color: white;
   background-color: #ff9600;
 }
 
-.contact-button:active {
-  transform: translateY(0);
-}
-
-
 .direita {
   margin-left: auto;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  position: fixed; /* Make the menu icon fixed */
+  top: 1em; /* Adjust as needed */
+  left: 1em; /* Adjust as needed */
+  z-index: 3; /* Ensure it is above other elements */
+}
+
+.hidden {
+  display: none !important;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-  .navbar-brand-button, .contact-button {
+  .navbar-brand-button,
+  .contact-button {
     font-size: 1em;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .left-container.active .navbar-menu {
+    display: flex;
+  }
+
+  .left-container.active .navbar-brand {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    position: fixed;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    margin-top: 0;
+    list-style-type: none;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-menu li a {
+    position: relative;
+    text-decoration: none;
+    color: #ff9600;
+    font-size: 1.5em;
+  }
+
+  .mobile-menu li a:hover {
+    color: #ff9600;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-container.active + .header-container {
+    display: none;
+  }
+
+  .header-container {
+    display: none;
   }
 }

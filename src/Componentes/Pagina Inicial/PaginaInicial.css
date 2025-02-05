@@ -1,6 +1,9 @@
 .ContainerPagina {
-    text-align: center;
-    padding: 5em;
-    font-size: 1.5em;
-    color: #191a18;
+  display: flex;
+  text-align: center;
+  font-size: 1.5em;
+  color: #191a18;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 }

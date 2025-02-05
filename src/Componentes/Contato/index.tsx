@@ -9,6 +9,7 @@ export const Contato = () => {
   };
 
   const [formData, setFormData] = useState(initialFormData);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -25,8 +26,12 @@ export const Contato = () => {
     console.log(formData); // Aqui você pode enviar os dados para o servidor ou fazer o que desejar com eles
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <footer className="containerFooter">
+    <footer className="containerFooter responsiveFooter">
       <div className="texto">
         <h1>Contato</h1>
         <p>
@@ -38,9 +43,7 @@ export const Contato = () => {
         <div className="form-box">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="nome">
-                Nome completo:
-              </label>
+              <label htmlFor="nome">Nome completo:</label>
               <input
                 type="text"
                 name="nome"
@@ -53,9 +56,7 @@ export const Contato = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">
-                E-mail:
-              </label>
+              <label htmlFor="email">E-mail:</label>
               <input
                 type="email"
                 name="email"
@@ -68,9 +69,7 @@ export const Contato = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="mensagem">
-                Como podemos ajudar:
-              </label>
+              <label htmlFor="mensagem">Como podemos ajudar:</label>
               <textarea
                 name="mensagem"
                 id="mensagem"
@@ -85,6 +84,19 @@ export const Contato = () => {
           </form>
         </div>
       </div>
+      <nav className={`mobile-menu ${menuOpen ? "open" : ""} responsiveNav`}>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   );
 };
