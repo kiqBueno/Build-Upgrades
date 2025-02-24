@@ -56,7 +56,7 @@ export const Navbar = () => {
           top: targetPosition,
           behavior: "smooth",
         });
-        setMenuActive(false); // Close the menu
+        setMenuActive(false);
       }
     }
   };
@@ -65,11 +65,18 @@ export const Navbar = () => {
     setMenuActive(!menuActive);
   };
 
+  const handleBackgroundClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      setMenuActive(false);
+    }
+  };
+
   return (
     <header className="responsive-header">
       <nav
         ref={menuRef}
         className={`mobile-container ${menuActive ? "active" : ""}`}
+        onClick={handleBackgroundClick}
       >
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰

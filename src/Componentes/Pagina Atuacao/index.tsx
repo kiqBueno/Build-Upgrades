@@ -11,7 +11,7 @@ export const PaginaAtuacao = () => {
             A dimensão de vendas engloba um Sistema de integração digital
             dedicado a impulsionar as vendas, a competitividade e ampliação de
             público. Alcançado por meio de Marketing Digital e Comércio
-            Eletrônico 
+            Eletrônico
           </p>
         </div>
         <div className="card">
@@ -26,8 +26,9 @@ export const PaginaAtuacao = () => {
           <h2>Gestão</h2>
           <p>
             Na esfera da GESTÃO, englobamos plataformas projetadas para
-            automatizar os processos tanto do backoffice quanto do core business. 
-            Aqui incluímos ERPs e sistemas de gestão de recursos humanos.
+            automatizar os processos tanto do backoffice quanto do core
+            business. Aqui incluímos ERPs e sistemas de gestão de recursos
+            humanos.
           </p>
         </div>
       </div>

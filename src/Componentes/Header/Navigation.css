@@ -87,7 +87,7 @@
   display: none;
   background: none;
   border: none;
-  font-size: 1.5em;
+  font-size: 2em;
   cursor: pointer;
   position: fixed; /* Make the menu icon fixed */
   top: 1em; /* Adjust as needed */
@@ -127,16 +127,28 @@
   .mobile-menu {
     display: none;
     flex-direction: column;
-    gap: 1em;
     position: fixed;
     left: 0;
-    width: 50vw;
-    height: 50vh;
-    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); /* Adjusted to use rgba for background opacity */
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     z-index: 2;
     margin-top: 0;
     list-style-type: none;
+  }
+
+  .mobile-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: larger;
   }
 
   .mobile-menu.active {
