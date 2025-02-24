@@ -79,7 +79,7 @@ export const Navbar = () => {
         onClick={handleBackgroundClick}
       >
         <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
+          {menuActive ? "✖" : "☰"}
         </button>
         <ul className={`mobile-menu ${menuActive ? "active" : ""}`}>
           <li>

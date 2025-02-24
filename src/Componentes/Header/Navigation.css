@@ -89,10 +89,13 @@
   border: none;
   font-size: 2em;
   cursor: pointer;
-  position: fixed; /* Make the menu icon fixed */
-  top: 1em; /* Adjust as needed */
-  left: 1em; /* Adjust as needed */
-  z-index: 3; /* Ensure it is above other elements */
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  z-index: 3;
+  margin: 1.5rem;
+  font-weight: bold; /* Ensure consistent font weight */
+  color: #ff9600; /* Change icon color to orange */
 }
 
 .hidden {
