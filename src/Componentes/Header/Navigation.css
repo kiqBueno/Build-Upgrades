@@ -46,7 +46,7 @@
 .left-container .navbar-menu {
   display: flex;
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 
 .navbar-brand img {
@@ -57,7 +57,7 @@
   background: none;
   color: #191a18;
   border: none;
-  padding: 0;
+  /* padding: 0; */
   font: inherit;
   cursor: pointer;
   display: flex;
@@ -141,6 +141,8 @@
     z-index: 2;
     margin-top: 0;
     list-style-type: none;
+    align-items: center;
+    padding: 0;
   }
 
   .mobile-menu li {
@@ -149,11 +151,13 @@
     align-items: center;
     height: 10vh;
     font-size: larger;
+    width: 100vw; /* Add this line to ensure items take full width */
   }
 
   .mobile-menu.active {
     display: flex;
     justify-content: center;
+    width: 100vw;
   }
 
   .mobile-menu li a {
